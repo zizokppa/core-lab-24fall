@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.circle {
+    width: 200px;
+  margin:50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+ 
+}
+
+.circle:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大按钮 */
+    
+}
+
+.back-circle3 {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+  color: black;
+    border-radius: 0;
+    z-index: 100; /* 确保它在所有内容的上方 */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.back-circle3:hover {
+    transform: scale(1.1); /* 悬停时放大 */
+}
+
+.back-circle:hover {
+    transform: scale(1.1); /* 悬停时放大 */
+}
+
+.page-2-background {
+    background-color: #000000; /* 替换为你想要的背景颜色 */
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* 相对定位以放置绝对定位的元素 */
+    width: 800px;
+    height: 450px;
+}
+
+.clipped-video {
+    clip-path: inset(0 50% 0 0); /* 裁剪右边 50% */
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* 占据视频右半部分 */
+    height: 100%;
+    background-color: transparent; /* 背景透明，让GIF显示 */
+    z-index: 9; /* 确保在视频上方 */
+}
+
+/* 让GIF显示在视频右半部分 */
+.gif-half {
+    width: 70%;
+    height: 100%;
+    object-fit: cover; /* 保证GIF适应容器 */
+}
+
+.invertible-video, .invertible-gif {
+    transition: filter 0.5s ease;
+}
+
+.invertible-video:hover, .invertible-gif:hover {
+    filter: invert(1); /* 反转颜色 */
+}
+
+.back-circle {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+  color: white;
+    border-radius: 0;
+    z-index: 100; /* 确保它在所有内容的上方 */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-2-background {
+    background-color: black;
+}

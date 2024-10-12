@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 - 分割视频</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="page-2-background">
+    
+    <div class="video-container">
+        <!-- 视频部分 -->
+        <video autoplay loop muted width="800" height="450" class="invertible-video">
+            <source src="videos/RPReplay_Final1727837220.mp4" type="video/mp4">
+            您的浏览器不支持 video 标签。
+        </video>
+
+        <!-- 遮挡视频的右半部分，并放置GIF -->
+        <div class="mask">
+            <img src="album/gif/Pigeon.gif" alt="GIF" class="gif-half invertible-gif">
+        </div>
+    </div>
+
+    <!-- 预先录制的音频文件 -->
+    <audio id="hover-sound" preload="auto">
+        <source src="album/audio/RPReplay_Final1727927129.mp3" type="audio/mpeg">
+        您的浏览器不支持 audio 标签。
+    </audio>
+
+    <a href="index.html" class="back-circle"></a>
+
+    <div class="back-circle" onclick="window.location.href='index.html'">Back</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
