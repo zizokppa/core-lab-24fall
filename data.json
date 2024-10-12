@@ -1,0 +1,36 @@
+{
+    "selfPortrait": {
+      "artist": "Faye Wong",
+      "listeningHours": 50,
+      "mostPlayedSong": "Eyes on Me",
+      "playCount": 120,
+      "isFavoriteArtist": true,
+      "technoTracks": [
+        {
+          "name": "360",
+          "energyLevel": "High",
+          "playCount": 30
+        },
+        {
+          "name": "360 Remix",
+          "energyLevel": "Very High",
+          "playCount": 25
+        }
+      ],
+      "listeningHabits": {
+        "day": {
+          "mood": "Relaxed",
+          "genre": "Ambient"
+        },
+        "night": {
+          "mood": "Energetic",
+          "genre": "Techno"
+        }
+      },
+      "summary": {
+        "concept": "contrast and contradiction",
+        "description": "Faye Wong's soothing, melancholic music contrasts with the occasional appearance of high-energy techno tracks, reflecting the split in my emotional landscape."
+      }
+    }
+  }
+  
